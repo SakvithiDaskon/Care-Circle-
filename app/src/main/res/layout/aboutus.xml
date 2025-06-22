@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="101dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="About Us"
+            android:textColor="#0D47A1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CareCircle is a modern safety app designed to help you stay connected with your loved ones. With features like emergency alerts, daily check-ins, and location sharing, our mission is to ensure your safety and give your family peace of mind."
+            android:textSize="17sp"
+            android:textColor="#37474F"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📧  support@carecircle.com"
+            android:textSize="16sp"
+            android:textColor="#263238"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌐  www.carecircle.com"
+            android:textSize="16sp"
+            android:textColor="#263238"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif" />
+
+    </LinearLayout>
+</ScrollView>

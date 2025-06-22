@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Your Care Circle"
+        android:textColor="@android:color/white"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/careList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:background="@drawable/list_background" />
+
+</LinearLayout>

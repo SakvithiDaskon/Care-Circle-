@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="colorPrimaryVariant">@color/light_blue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/light_blue</item>
+        <!-- night mode customizations -->
+    </style>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Your custom theme -->
+    <style name="Theme_CareCircle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#4FC3F7</item> <!-- Light blue -->
+        <item name="colorPrimaryVariant">#0288D1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#03DAC5</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#0288D1</item>
+        <item name="android:windowBackground">#E1F5FE</item>
+    </style>
+
+</resources>
