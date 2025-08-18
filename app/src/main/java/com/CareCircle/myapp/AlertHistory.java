@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class AlertHistory extends AppCompatActivity {
     TextView historyView;
-    Database db;
+    Database db;  // database helper to fetch check-in history
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,13 @@ public class AlertHistory extends AppCompatActivity {
         historyView = findViewById(R.id.historyText);
         db = new Database(this);
 
+        // fetch all saved check-ins from database
         ArrayList<String> historyList = db.getAllCheckIns();
 
         if (historyList.isEmpty()) {
             historyView.setText("No alert history found.");
         } else {
-            // Join all entries with double line breaks for readability
+            // format entries with double line breaks for readability
             StringBuilder historyText = new StringBuilder();
             for (String entry : historyList) {
                 historyText.append(entry).append("\n\n");

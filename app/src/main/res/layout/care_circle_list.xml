@@ -1,29 +1,43 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="@color/light_blue">
+    android:padding="16dp"
+    android:background="@drawable/cc">  <!-- CC.img in drawable folder -->
 
     <TextView
+        android:id="@+id/careCircleTitle"
         android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="sans-serif-medium"
+        android:layout_height="wrap_content"
+        android:text="🫂 Your Care Circle"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:gravity="center"
-        android:text="Your Care Circle"
-        android:textColor="@android:color/white"
-        android:textSize="29sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="60dp"/>
 
     <ListView
         android:id="@+id/careList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="@android:color/white"
-        android:dividerHeight="1dp"
-        android:padding="8dp"
-        android:background="@drawable/list_background" />
+        android:layout_width="wrap_content"
+        android:layout_height="396dp"
+        android:layout_above="@id/hintText"
+        android:layout_below="@id/careCircleTitle"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="308dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:padding="8dp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hint: If you long press a contact, it will be deleted."
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

@@ -19,7 +19,7 @@
             android:gravity="center"
             android:text="Local Emergency Numbers"
             android:textColor="#0D47A1"
-            android:textSize="28sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
 
@@ -31,8 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:textStyle="bold"
-            android:textSize="15sp"
-            android:text="Click SOS Service you want" />
+            android:textSize="20sp"
+            android:text="Click SOS Service" />
 
 
         <TextView

@@ -12,12 +12,14 @@ public class Signup extends AppCompatActivity {
 
     EditText username, email, password, confirmPassword;
     Button signupBtn;
-    Database db;
+    Database db; // database helper
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
 
+        // link UI elements
         username = findViewById(R.id.username);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -32,15 +34,17 @@ public class Signup extends AppCompatActivity {
             String pass = password.getText().toString().trim();
             String confirmPass = confirmPassword.getText().toString().trim();
 
+            // validate inputs
             if (TextUtils.isEmpty(user) || TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(confirmPass)) {
                 Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
             } else if (!pass.equals(confirmPass)) {
                 Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
             } else {
+                // insert new user in database
                 boolean inserted = db.insertUser(user, mail, pass);
                 if (inserted) {
                     Toast.makeText(this, "Signup Successful", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(this, Login.class));
+                    startActivity(new Intent(this, Login.class)); // go to login screen
                     finish();
                 } else {
                     Toast.makeText(this, "Username already exists", Toast.LENGTH_SHORT).show();
