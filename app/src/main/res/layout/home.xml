@@ -9,65 +9,84 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:paddingBottom="60dp">
 
+        <!-- Pushed title lower -->
+
+        <!-- Highlighted Emergency Button -->
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="114dp"
-            android:layout_marginBottom="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="Care Circle Dashboard"
             android:textColor="@color/black"
-            android:textSize="32sp"
+            android:textSize="40sp"
             android:textStyle="bold" />
-
-
-        <Button
-            android:id="@+id/emergencyBtn"
-            style="@style/DashboardButton"
-            android:layout_width="332dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:backgroundTint="#D32F2F"
-            android:padding="16dp"
-            android:text="Emergency Alert"
-            android:textColor="#FF0000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/careCircleBtn"
-            style="@style/DashboardButton"
-            android:text="Care Circle List" />
-
-        <Button
-            android:id="@+id/addContactBtn"
-            style="@style/DashboardButton"
-            android:text="Add Contact" />
 
         <Button
             android:id="@+id/mapBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="32dp"
+            android:background="#D32F2F"
+            android:text="Emergency SMS"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+        <!-- Other Dashboard Buttons -->
+        <Button
+            android:id="@+id/careCircleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             style="@style/DashboardButton"
-            android:text="Location Map" />
+            android:layout_marginBottom="20dp"
+            android:text="Care Circle List"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/addContactBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            style="@style/DashboardButton"
+            android:layout_marginBottom="20dp"
+            android:text="Add Contact"
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/historyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             style="@style/DashboardButton"
-            android:text="Alert History" />
+            android:layout_marginBottom="20dp"
+            android:text="Alert History"
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/localNumbersBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             style="@style/DashboardButton"
-            android:text="Local Emergency Numbers" />
+            android:layout_marginBottom="20dp"
+            android:text="SOS Services"
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/AboutusBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             style="@style/DashboardButton"
-            android:text="About Us" />
+            android:text="About Us"
+            android:textSize="28sp" />
 
-
-
-
+        <!-- Extra space at bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
     </LinearLayout>
 </ScrollView>

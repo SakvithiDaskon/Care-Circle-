@@ -1,22 +1,28 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- Map: half screen -->
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
+    <!-- Big red emergency button -->
     <Button
         android:id="@+id/btnSendEmergency"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Emergency Alert"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="30dp"
-        android:padding="12dp"
-        android:backgroundTint="#e53935"
-        android:textColor="#ffffff" />
-
-</FrameLayout>
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="24dp"
+        android:text="Send Emergency SMS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="@drawable/btn_emergency"
+        android:gravity="center"/>
+</LinearLayout>
